@@ -12,9 +12,7 @@ instead of fixed activations, **learnable functions are placed on edges**.
 Each edge function is parameterized using **B-spline basis functions**.
 
 ### Edge Function
-$
-\phi_{ij}(x) = \sum_{k} c_{ijk} B_k(x)
-$
+$\phi_{ij}(x) = \sum_{k} c_{ijk} B_k(x)$
 
 Where:
 
@@ -24,7 +22,9 @@ Where:
 
 ### Architecture
 784 -> KAN(64) -> LayerNorm -> ReLU
+
     -> KAN(32) -> LayerNorm -> ReLU
+
     -> Linear(10)
 
 ### Characteristics
@@ -41,9 +41,7 @@ Instead of relying purely on splines, the model learns a **combination of linear
 
 ### Edge Function
 
-$
-y = w_b \cdot \text{Linear}(\text{SiLU}(x)) + w_s \cdot \text{Spline}(x)
-$
+$y = w_b \cdot \text{Linear}(\text{SiLU}(x)) + w_s \cdot \text{Spline}(x)$
 
 Where:
 
@@ -52,7 +50,9 @@ Where:
 
 ### Architecture
 784 -> KAN(128) -> LayerNorm
+
     -> KAN(64) -> LayerNorm
+
     -> KAN(10)
 
 ### Characteristics
@@ -74,9 +74,7 @@ Polynomial basis functions provide:
 
 ### Edge Function
 
-$
-y = \sum W\,\sigma(x) + b + \sum_d c_d\,T_d(\tanh(x))
-$
+$y = \sum W\,\sigma(x) + b + \sum_d c_d\,T_d(\tanh(x))$
 
 Where:
 
@@ -86,7 +84,9 @@ Where:
 
 ### Architecture
 784 -> ChebyKAN(64) -> LayerNorm
+
     -> ChebyKAN(32) -> LayerNorm
+
     -> ChebyKAN(10)
 
 ### Characteristics
@@ -114,12 +114,7 @@ Instead of flattening images immediately, spatial information is preserved using
 
 ### Edge Function
 
-$
-y =
-Conv(\text{SiLU}(x), W_b)
-+
-Conv([T_0(\tanh x), T_1(\tanh x), …, T_D(\tanh x)], W_{poly})
-$
+$y = Conv(\text{SiLU}(x), W_b) + Conv([T_0(\tanh x), T_1(\tanh x), …, T_D(\tanh x)], W_{poly})$
 
 Where:
 
