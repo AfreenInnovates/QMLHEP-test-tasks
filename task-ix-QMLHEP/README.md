@@ -6,7 +6,7 @@ All the four implemented models are in the same notebook: [`task_ix_classical_KA
 
 # Models Implemented
 
-## 1. Classical Model 0 - KAN v0 (Spline-Based KAN) (`model_classical_0`)
+# 1. Classical Model 0 - KAN v0 (Spline-Based KAN) (`model_classical_0`)
 
 This is the **baseline KAN architecture** that follows the original KAN idea:  
 instead of fixed activations, **learnable functions are placed on edges**.
