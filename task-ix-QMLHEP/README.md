@@ -2,9 +2,11 @@
 
 All models were trained for **15 epochs on MNIST** using **AdamW optimization**.
 
+All the four implemented models are in the same notebook: [`task_ix_classical_KAN.ipynb`](task_ix_classical_KAN.ipynb)
+
 # Models Implemented
 
-## 1. Classical Model 0 - KAN v0 (Spline-Based KAN)
+## 1. Classical Model 0 - KAN v0 (Spline-Based KAN) (`model_classical_0`)
 
 This is the **baseline KAN architecture** that follows the original KAN idea:  
 instead of fixed activations, **learnable functions are placed on edges**.
@@ -33,7 +35,7 @@ Where:
 - Demonstrates the **core idea of KAN**
 - Higher parameter count due to **basis expansion per edge**
 
-# 2. Classical Model 1 - KAN v1 (Hybrid Linear + Spline KAN)
+# 2. Classical Model 1 - KAN v1 (Hybrid Linear + Spline KAN) (`model_classical_1`)
 
 This version improves KAN v0 by adding a **linear base path alongside the spline function**.
 
@@ -62,7 +64,7 @@ Where:
 - Higher parameter count
 - Better accuracy than pure spline KAN
 
-# 3. Classical Model 2 - KAN v2 (Chebyshev Polynomial KAN)
+# 3. Classical Model 2 - KAN v2 (Chebyshev Polynomial KAN) (`model_classical_2`)
 
 Instead of spline basis functions, this model uses **Chebyshev polynomials**.
 
@@ -106,7 +108,7 @@ Where:
 
 ![Test Accuracy Comparison](model0_vs_model1_vs_model2_testAccuracyComparison.png.png)
 
-# 4. Convolutional KAN - ConvChebyKAN
+# 4. Convolutional KAN - ConvChebyKAN (`chebyKANConvModel`)
 
 This model integrates **convolutional feature extraction with Chebyshev KAN layers**.
 
