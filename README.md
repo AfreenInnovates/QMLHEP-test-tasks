@@ -7,12 +7,9 @@ This repository contains my implementations and documentation for the **ML4Sci G
 
 ### [`tasks-i-ii-iii-QMLHEP/`](tasks-i-ii-iii-QMLHEP/)
 
-**Quantum Circuit Implementation & Research Exploration**
-
-- **Task I:** Quantum Computing Part : [`tasks_i_ii.ipynb`](tasks-i-ii-iii-QMLHEP/tasks_i_ii.ipynb)
-  
+- **Task I:** Quantum Computing Part : [`tasks_i_ii.ipynb`](tasks-i-ii-iii-QMLHEP/tasks_i_ii.ipynb)  
 - **Task II:** Graph Neural Network (GNN) : [`tasks_i_ii.ipynb`](tasks-i-ii-iii-QMLHEP/tasks_i_ii.ipynb)
-  
+    - Both tasks I, II are implemented in the same notebook. Scroll down to find Task II implementation.
 - **Task III:** Open task : [`task-iii.md`](tasks-i-ii-iii-QMLHEP/task-iii.md)
 
 ---
