@@ -23,9 +23,9 @@ Where:
 ### Architecture
 784 -> KAN(64) -> LayerNorm -> ReLU
 
-    -> KAN(32) -> LayerNorm -> ReLU
+  -> KAN(32) -> LayerNorm -> ReLU
 
-    -> Linear(10)
+  -> Linear(10)
 
 ### Characteristics
 
@@ -51,9 +51,9 @@ Where:
 ### Architecture
 784 -> KAN(128) -> LayerNorm
 
-    -> KAN(64) -> LayerNorm
+  -> KAN(64) -> LayerNorm
 
-    -> KAN(10)
+  -> KAN(10)
 
 ### Characteristics
 
@@ -85,9 +85,9 @@ Where:
 ### Architecture
 784 -> ChebyKAN(64) -> LayerNorm
 
-    -> ChebyKAN(32) -> LayerNorm
+  -> ChebyKAN(32) -> LayerNorm
 
-    -> ChebyKAN(10)
+  -> ChebyKAN(10)
 
 ### Characteristics
 
