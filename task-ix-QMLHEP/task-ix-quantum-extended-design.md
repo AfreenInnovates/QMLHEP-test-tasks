@@ -60,10 +60,6 @@ The depth and resource requirements of full QSVT pipelines make the architecture
 
 Activation functions represented through high-degree Chebyshev expansions can require many controlled transformations, increasing training complexity.
 
-### 5. Difficult Integration with ML Frameworks
-
-Implementing full block-encoding and QSVT pipelines inside hybrid ML workflows is nontrivial and computationally expensive.
-
 
 ## Proposed QKAN Architecture
 
@@ -134,12 +130,6 @@ The proposed design improves practicality while maintaining the KAN structure:
 * **Preserves KAN structure**
   Edge-based nonlinear functions and summation layers remain intact.
 
-
-## Implementation Stack
-
-* **PennyLane** – quantum circuit simulation and differentiation
-* **PyTorch** – classical optimization and training
-* **Hybrid QNodes** – integration of quantum circuits into neural networks
 
 
 ## Goal
