@@ -11,6 +11,10 @@ All the four implemented models are in the same notebook: [`task_ix_classical_KA
 This is the **baseline KAN architecture** that follows the original KAN idea:  
 instead of fixed activations, **learnable functions are placed on edges**.
 
+$$
+y_j = \sum_{i=1}^{n} \phi_{ij}(x_i)
+$$
+
 Each edge function is parameterized using **B-spline basis functions**.
 
 ### Edge Function
