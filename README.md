@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains my implementations and documentation for the **ML4Sci GSoC 2026** application test tasks, focusing on **Quantum Machine Learning for High Energy Physics (QMLHEP)**, particularly for the project [Quantum Kolmogorov-Arnold Networks for High Energy Physics Analysis at the LHC
+This repository contains my implementations and documentation for the **ML4Sci GSoC 2026** application test tasks, focusing on **Quantum Machine Learning for High Energy Physics (QMLHEP)**, for the project [Quantum Kolmogorov-Arnold Networks for High Energy Physics Analysis at the LHC
 ](https://ml4sci.org/gsoc/2026/proposal_QMLHEP10.html)
 
 
