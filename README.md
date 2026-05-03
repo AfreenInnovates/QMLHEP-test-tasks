@@ -1,11 +1,3 @@
-<h1> ML4Sci Test Tasks - QMLHEP 2026 </h1>
-
-## Overview
-
-This repository contains my implementations and documentation for the **ML4Sci GSoC 2026** application test tasks, focusing on **Quantum Machine Learning for High Energy Physics (QMLHEP)**, for the project [Quantum Kolmogorov-Arnold Networks for High Energy Physics Analysis at the LHC
-](https://ml4sci.org/gsoc/2026/proposal_QMLHEP10.html)
-
-
 ### [`tasks-i-ii-iii-QMLHEP/`](tasks-i-ii-iii-QMLHEP/)
 
 - **Task I:** Quantum Computing Part : [`tasks_i_ii.ipynb`](tasks-i-ii-iii-QMLHEP/tasks_i_ii.ipynb)  
